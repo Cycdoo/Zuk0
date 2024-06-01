@@ -1,0 +1,108 @@
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: white;
+  margin: 0;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the content horizontally */
+  padding: 20px;
+}
+
+
+.navbar {
+  padding: 20px;
+  background-color: #000;
+  text-align: center;
+}
+
+.video-card:nth-child(n) {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.navbar-text {
+  color: white;
+  font-size: 28px; /* Adjust font size as needed */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.video-card {
+  margin: 10px;
+  width: 320px; /* Adjust width as needed for larger thumbnails */
+}
+
+.video-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video-card h3 {
+  font-size: 18px;
+  margin: 10px 0 0;
+}
+
+.video-detail {
+  padding: 20px;
+}
+
+.video-detail video {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.video-detail h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.video-detail p {
+  font-size: 16px;
+}
+
+/* App.css */
+
+.preview-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 750px; /* Adjust width as needed */
+  height: 500px; /* Adjust height as needed */
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+
+.video-card:hover .preview-window {
+  visibility: visible;
+  opacity: 1;
+}
+
+.preview-window video {
+  width: 100%;
+  height: 100%;
+}
